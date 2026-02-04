@@ -1,0 +1,22 @@
+\section{Preliminaries}
+
+\begin{definition}
+For $x > 0$, the maximal prime gap function $\maxgap(x)$ is defined as:
+\[\maxgap(x) = \max\{p_{n+1} - p_n : p_n \leq x\}\]
+where $p_n$ denotes the $n$-th prime number.
+\end{definition}
+
+\begin{definition}
+The average prime gap function $\avgap(x,h)$ over an interval $[x,x+h]$ is defined as:
+\[\avgap(x,h) = \frac{1}{\pi(x+h) - \pi(x)} \sum_{x < p_n \leq x+h} \pg(n)\]
+where $\pi(x)$ is the prime counting function.
+\end{definition}
+
+\begin{lemma}\label{lem:basic_bound}
+For all $x \geq 2$, we have:
+\[\maxgap(x) \geq \log x\]
+\end{lemma}
+
+\begin{proof}
+This follows from the fact that there must be a composite number between any prime $p$ and $2p$, creating a gap of at least $\log p$.
+\end{proof}
