@@ -1,0 +1,13 @@
+\section{Applications}
+
+Our improved bounds on prime gaps have several important applications in computational number theory:
+
+\begin{example}
+Using Theorem \ref{thm:main_gap}, we can improve the complexity of primality testing algorithms in certain ranges. Specifically, for numbers near $x$, we need only check for divisors up to $\sqrt{x}$ with gaps of size at most $(\log x)^2 \cdot (\log\log x)^{-1}$.
+\end{example}
+
+\begin{corollary}
+For any $\eps > 0$, there exists a deterministic algorithm to find primes in the interval $[x, x+x^{1/2+\eps}]$ running in time $O(x^{1/2+\eps})$.
+\end{corollary}
+
+These results also have applications to cryptographic algorithms where generating large primes is essential.
